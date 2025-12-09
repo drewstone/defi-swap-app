@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0b0d;
+  --foreground: #ffffff;
+  --primary: #0052ff;
+  --secondary: #1a1b1e;
+  --accent: #2a2b2e;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --primary: #0052ff;
+    --secondary: #f5f5f5;
+    --accent: #e5e5e5;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
